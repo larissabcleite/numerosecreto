@@ -8,7 +8,7 @@ body {
 }
 
 body::before  {
-  background-image: url("/img/background.png");
+  background-image: url("../img/background.png");
   background-color: rgba(89, 156, 119, 0);
   background-repeat: no-repeat;
   background-position: right;
