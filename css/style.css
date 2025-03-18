@@ -1,0 +1,141 @@
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; 
+}
+
+body::before  {
+  background-image: url("/img/background.png");
+  background-color: rgba(89, 156, 119, 0);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover; 
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+}
+
+.container-principal {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  border-radius: 24px;
+  box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.container-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column; 
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fcfdfd;
+}
+
+.container-informacoes {
+  flex: 1;
+  padding: 2rem; 
+  text-align: center;
+  margin-top: auto; 
+  margin-bottom: auto; 
+}
+
+button:hover{
+  background-color: rgb(243, 245, 243);
+}
+
+.botao-acao {
+  border-radius: 16px;
+  background: rgb(101, 148, 111);
+  padding: 16px 24px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  margin-top: 2rem;
+
+}
+
+.container-texto {
+  margin: 16px 0 16px 0;
+
+}
+
+.entrada-numero {
+  width: 80%;
+  height: 10%;
+  border-radius: 16px;
+  background-color: #fcfdfd;
+  border: none;
+  color: #59a079;
+  padding: 2rem;
+  font-size: 24px;
+  font-weight: 700;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.container-botoes {
+  display: flex;
+  gap: 2em;
+}
+
+h1 {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+button {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.texto-instrucao {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+button:disabled {
+  background-color: rgb(101, 148, 111);
+}
+
+@media screen and (max-width: 1250px) {
+
+  h1 {
+      font-size: 50px;
+  }
+
+  .botao-acao {
+      font-size: 16px;
+  }
+
+.texto-instrucao {
+      font-size: 24px;
+  }
+
+  .container__imagem-pessoa {
+      display: none;
+  }
+
+  .container-conteudo {
+      display: block;
+      position: inherit;
+  }
+
+  .container-informacoes {
+      padding: 1rem; 
+      margin-top: 0; 
+      margin-bottom: 0; 
+  }
+}
+  
